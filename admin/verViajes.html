@@ -68,7 +68,7 @@
           <li class="relative">
             <a
               class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] py-4 px-6 text-[0.875rem] text-gray-700 outline-none transition duration-300 ease-linear hover:bg-gray-300/30 hover:text-inherit hover:outline-none focus:bg-gray-300/30 focus:text-inherit focus:outline-none active:bg-gray-300/30 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-              href="#!"
+              href="/admin/admin.html"
               data-te-sidenav-link-ref
             >
               <span
@@ -125,7 +125,7 @@
           <li class="relative">
             <a
               class="group flex h-12 cursor-pointer items-center truncate rounded-[5px] py-4 px-6 text-[0.875rem] text-gray-700 outline-none transition duration-300 ease-linear hover:bg-gray-300/30 hover:text-inherit hover:outline-none focus:bg-gray-300/30 focus:text-inherit focus:outline-none active:bg-gray-300/30 active:text-inherit active:outline-none data-[te-sidenav-state-active]:text-inherit data-[te-sidenav-state-focus]:outline-none motion-reduce:transition-none dark:text-gray-300 dark:hover:bg-white/10 dark:focus:bg-white/10 dark:active:bg-white/10"
-              href="/admin/verViajes.html"
+              href="#!"
               data-te-sidenav-link-ref
             >
               <span
@@ -230,70 +230,143 @@
     <!-- Sidenav -->
 
     <!-- Content -->
-   <div class="min-h-screen w-full bg-gray-50 !pl-0 text-center sm:!pl-60 p-3" id="content">
-    <main class="container mx-auto py-4 px-4">
-      <div
-          class="relative overflow-hidden bg-cover bg-no-repeat"style="background-position: 50%;
-            background-image: url('../img/carrito3.png');
-            height: 450px;">
-            <!-- <div class="m-5 flex flex-col items-start">
-              <h2 class="text-2xl text-teal-900 font-bold mb-4">Bienvenido al panel de administración</h2>
-              <p class="text-teal-800 mb-8 items-start">
-                En esta sección podrás gestionar todos los aspectos de la empresa de
-                transporte, desde la programación de los viajes hasta la asignación de
-                los conductores y los vehículos. A continuación, te presentamos las
-                principales opciones disponibles:
-              </p>
-            </div> -->
-        
-      </div>
-      <div class="grid grid-cols-2 gap-4 mt-5">
-        <!-- Opción de programación de viajes -->
-        <a href="#" class="bg-white p-4 rounded-lg shadow-md">
-          <i class="fas fa-calendar-alt text-blue-500 text-2xl mb-4"></i>
-          <h3 class="text-lg font-bold text-gray-700 mb-2">Programación de viajes</h3>
-          <p class="text-gray-500">
-            Programa los viajes de los distintos vehículos y conductores para
-            maximizar la eficiencia y la rentabilidad de la empresa.
-          </p>
-        </a>
-        <!-- Opción de asignación de conductores y vehículos -->
-        <a href="#" class="bg-white p-4 rounded-lg shadow-md">
-          <i class="fas fa-truck-pickup text-blue-500 text-2xl mb-4"></i>
-          <h3 class="text-lg font-bold text-gray-700 mb-2">Asignación de conductores y vehículos</h3>
-          <p class="text-gray-500">
-            Asigna los conductores y vehículos a los distintos viajes
-            programados, teniendo en cuenta las capacidades de cada uno.
-          </p>
-        </a>
-        <!-- Opción de gestión de clientes y proveedores -->
-        <a href="#" class="bg-white p-4 rounded-lg shadow-md">
-          <i class="fas fa-users text-blue-500 text-2xl mb-4"></i>
-          <h3 class="text-lg font-bold text-gray-700 mb-2">Gestión de clientes y proveedores</h3>
-          <p class="text-gray-500">
-            Administra la información de los clientes y proveedores de la
-            empresa, incluyendo los contratos y los acuerdos comerciales.
-          </p>
-        </a>
-         <!-- Opción de seguimiento de vehículos y cargas -->
-        <a href="#" class="bg-white p-4 rounded-lg shadow-md">
-          <i class="fas fa-map-marker-alt text-blue-500 text-2xl mb-4"></i>
-          <h3 class="text-lg font-bold text-gray-700 mb-2">Seguimiento de vehículos y cargas</h3>
-          <p class="text-gray-500">
-            Sigue en tiempo real la ubicación de los vehículos y el estado de
-            las cargas, para asegurarte de que todo esté en orden.
-          </p>
-        </a>
-         <!-- Opción de configuración de la cuenta -->
-      <a href="#" class="bg-white p-4 rounded-lg shadow-md">
-        <i class="fas fa-cog text-blue-500 text-2xl mb-4"></i>
-        <h3 class="text-lg font-bold text-gray-700 mb-2">Configuración de la cuenta</h3>
-        <p class="text-gray-500">
-          Ajusta los parámetros de la cuenta de la empresa, como la información
-          de contacto, las preferencias de notificación y la seguridad.
-        </p>
-      </a>
-   </div>
+    <div class="min-h-screen w-full bg-gray-50 !pl-0 text-center sm:!pl-60 p-5" id="content">
+        <div class="relative overflow-hidden bg-cover bg-no-repeat"style="background-position: 50%;
+        background-image: url('../img/viajes.png');
+        height: 450px;">
+            <!-- <h1 class="text-2xl text-black uppercase font-bold mb-3 mt-3">Historial de viajes</h1>
+            <p class="text-black-800 text-black text-justify mb-8 px-10">
+                En esta ventana podrás ver los viajes de transporte de mercancía que se han asignado, que se están 
+                realizando y los que han finalizado. Si un viaje está asignado, significa que ya se ha seleccionado 
+                un conductor y un vehículo para transportar la mercancía y se encuentra en camino para su recolección. Si un viaje está en curso, significa que el conductor y el vehículo están en ruta hacia el destino de entrega. 
+                Finalmente, si un viaje está finalizado, significa que la mercancía ha sido entregada con éxito a su destino.
+            </p> -->
+          </div>   
+
+        <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr class="border">
+                        <th scope="col" class="px-6 py-3">
+                            Nombre - Ruta
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Vehiculo
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Estado
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Opciones
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
+                            <img class="w-10 h-10 rounded-full object-contain" src="https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png" alt="Jese image">
+                            <div class="pl-3">
+                                <div class="text-base font-semibold">Juan Correa</div>
+                                <div class="font-normal text-gray-500">Medellín - Barranquilla</div>
+                            </div>  
+                        </th>
+                        <td class="px-6 py-4">
+                            JHY523
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> Asignado
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img class="w-10 h-10 rounded-full object-contain" src="https://static.vecteezy.com/system/resources/thumbnails/011/675/376/small_2x/man-avatar-image-for-profile-png.png" alt="Jese image">
+                            <div class="pl-3">
+                                <div class="text-base font-semibold">Santiago Mesa</div>
+                                <div class="font-normal text-gray-500">Barranquilla - Medellín</div>
+                            </div>
+                        </th>
+                        <td class="px-6 py-4">
+                            ASD321
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> En Ruta
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img class="w-10 h-10 rounded-full object-contain" src="https://static.vecteezy.com/system/resources/thumbnails/011/675/380/small_2x/female-avatar-images-png.png" alt="Jese image">
+                            <div class="pl-3">
+                                <div class="text-base font-semibold">Maria Perez</div>
+                                <div class="font-normal text-gray-500">Medellín - Manizales</div>
+                            </div>
+                        </th>
+                        <td class="px-6 py-4">
+                            JHY523
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-2.5 w-2.5 rounded-full bg-green-500 mr-2"></div> En Ruta
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img class="w-10 h-10 rounded-full object-contain" src="https://static.vecteezy.com/system/resources/thumbnails/011/459/669/small_2x/people-avatar-icon-png.png" alt="Jese image">
+                            <div class="pl-3">
+                                <div class="text-base font-semibold">Luisa Diaz</div>
+                                <div class="font-normal text-gray-500">Cali - Bogotá</div>
+                            </div>
+                        </th>
+                        <td class="px-6 py-4">
+                            GTY741
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div> Finalizada
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                    </tr>
+                    <tr class="bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-600">
+                        <th scope="row" class="flex items-center px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            <img class="w-10 h-10 rounded-full object-contain" src="https://static.vecteezy.com/system/resources/previews/011/675/374/original/man-avatar-image-for-profile-png.png" alt="Jese image">
+                            <div class="pl-3">
+                                <div class="text-base font-semibold">Juan Correa</div>
+                                <div class="font-normal text-gray-500">Buenaventura - Medellín</div>
+                            </div>
+                        </th>
+                        <td class="px-6 py-4">
+                            XAX525
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center">
+                                <div class="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div> Finalizada
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Editar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
     <!-- Content -->
   </body>
 
@@ -326,4 +399,5 @@
     window.addEventListener("resize", setMode);
   </script>
   <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
 </html>
